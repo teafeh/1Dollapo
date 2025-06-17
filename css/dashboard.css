@@ -1,0 +1,348 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background: #11123F;
+    background: linear-gradient(75deg,rgba(17, 18, 63, 1) 0%, rgba(70, 71, 149, 1) 100%);
+    width: 100%;
+    padding: 20px 50px;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.nav-r{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.nav-a{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.nav-a a{
+    text-decoration: none;
+    color: aliceblue;
+    font-style: italic;
+    font-size: 1.4rem;
+}
+.nav-a a:hover{
+    color: red; 
+}
+.set-in{
+    z-index: 12;
+    display: none;
+    position: absolute;
+    padding: 20px;
+    background-color:  #11123F;
+    width: fit-content;
+    border-radius: 12px;
+    right: 0;
+    top: 50px;
+    border: 1px solid #464795 ;
+}
+.close-btn{
+    display: flex;
+    justify-content: right;
+}
+.btn5{
+    color: red;
+    border-radius: 2px;
+    padding: 3px 6px;
+    background-color: orange;
+    border: none;
+    cursor: pointer;
+}
+.p-pic{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    object-fit: cover;
+}
+.respo-bt{
+    display: none;
+}
+.btn4{
+    background-color:  #11123F;
+    border: 1px solid  #464795;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    padding: 10px 20px;
+    color: #fff;
+}
+.btn4:hover{
+    background-color: #464795;
+    border: 1px solid  #fff;
+    color: #11123F;
+}
+.bt{
+    margin: 20px;
+}
+
+body{
+   background: #11123F;
+   background: linear-gradient(270deg,rgba(17, 18, 63, 1) 0%, rgba(70, 71, 149, 1) 100%);
+   color: #fff;
+}
+
+.trans{
+    width: 95%;
+    border-radius: 20px;
+    background-color: #11123F;
+    margin: 20px auto;
+    padding: 20px;
+    display: none; /* Hidden by default */
+}
+.trans-h{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.p3, .a-tra {
+    font-size: 1.3rem;
+}
+.a3{
+    color: #fff;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+.a3:hover{
+    color: red;
+}
+.bg-trans{
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #464795;
+}
+.tran-list{
+    background-color: #11123F;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+    border-radius: 20px;
+    margin: 15px;
+}
+.t-time{
+    text-align: center;
+}
+.amout-r{
+  color: #FF0000;
+}
+.amout-g{
+    color: #008000;
+}  
+
+.add-data{
+    padding: 20px;
+    display: none; /* Hidden by default */
+}
+.btns1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 400px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.b-in{
+    padding: 15px 50px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.3rem;
+    color: #008000;
+    cursor: pointer;
+}
+
+.b-in:hover, .b-ex:hover{
+    opacity: 80%;
+}
+.active{
+    background-color: #007AF6;
+    color: #fff;
+}
+.add-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.b-ex{
+    font-size: 1.2rem;
+    padding: 15px 50px;
+    border: none;
+    border-radius: 8px;
+    color: #FF0000;
+    cursor: pointer;
+}
+.dash-inp{
+    width: 90%;
+    margin: auto;
+    background-color: #11123F;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.dash-inp2{
+    padding: 0 10px;
+}
+.dollar-inp{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 30px;
+}
+.span-d{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.inp-d{
+    flex-grow: 1;
+    border: 2px solid #464795;
+    border-radius: 20px;
+    background-color: #11123F;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+.d2{
+    font-size: 1.1rem;
+}
+.btns2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+}
+.btn3{
+    padding: 13px 70px;
+    color: #fff;
+    background-color: #007AF6;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+.currentBal{
+    padding: 15px;
+    background: #11123F;
+    background: radial-gradient(circle,rgba(17, 18, 63, 1) 0%, rgba(70, 71, 149, 1) 100%);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.amount-c-g{
+    color: #188018;
+    font-weight: bold;
+}
+.amount-c-r{
+    color: #891A0E;
+    font-weight: bold;
+}
+.span-s{
+    margin-bottom: 10px;
+}
+.m-device{
+    display: block; /* Visible by default */
+    padding: 20px;
+}
+.dash-t{
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.card-sec{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 30px;
+}
+.bi{
+    color: #fff;
+}
+.income-c{
+    width: 130px;
+    height: 130px;
+    background: #11123F;
+    background: radial-gradient(circle,rgba(17, 18, 63, 1) 0%, rgba(70, 71, 149, 1) 100%);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+.income-c:hover {
+    transform: scale(1.05);
+}
+.income-t{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1rem;
+}
+.income-t i {
+    font-size: 2rem;
+}
+
+.dash-mobile{
+    border-radius: 10px;
+    border: 1px solid #464795;
+    padding: 8px 12px;
+    color: #fff;
+    width: fit-content;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+@media(max-width: 630px){
+    header{
+        padding: 15px 20px;
+    }
+    .nav-a a{
+        display: none;
+    }
+    .respo-bt{
+        display: block;
+    }
+}
+
+
+@media(max-width: 490px){
+    .b-in, .b-ex{
+        padding: 10px 25px;
+        font-size: 1rem;
+    }
+    .span-d{
+        font-size: 1.1rem;
+    }
+    .inp-d{
+        font-size: 1rem;
+    }
+    .income-c{
+        width: 110px;
+        height: 110px;
+    }
+}
